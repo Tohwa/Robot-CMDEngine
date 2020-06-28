@@ -1,6 +1,7 @@
 #include "RobotAPI.h"
 
 // Uncomment to run the example code
+/*
 
 int main()
 {
@@ -67,4 +68,6 @@ int main()
 	//Stops the async renderer by the next frame
 	renderer.StopRenderer();
 }
+
+*/
 
