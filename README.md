@@ -1,5 +1,5 @@
 # Robot-CMDEngine
-A simple CMD renderer, which prints every frame characters to fill up the cmd window. To create the effect of a moving picture.
+A simple CMD renderer, which prints characters to fill up the cmd window, every frame. To create the effect of a moving picture.
 
 # Install
 Just simply add the Robot-CMDEngine folder to your project.
