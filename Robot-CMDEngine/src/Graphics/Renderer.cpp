@@ -13,9 +13,9 @@ namespace Robot {
 	{
 		std::cout << "Initialize Renderer..." << std::endl;
 
-		if (fps > 30 || fps < 1)
+		if (fps > 60 || fps < 1)
 		{
-			throw std::runtime_error("Ungueltige FPS Anzahl! Nur Werte zwischen 1 und 30 sind erlaubt!");
+			throw std::runtime_error("Ungueltige FPS Anzahl! Nur Werte zwischen 1 und 60 sind erlaubt!");
 		}
 
 		if (sizeX < 1 || sizeY < 1)
@@ -40,7 +40,7 @@ namespace Robot {
 		if(!SwapBuffers()) return;
 
 		m_BufferMutex.lock();
-		RenderCommand::Draw(m_ScreenBuffer, m_SizeX, m_SizeY, m_OutStream);
+		RenderCommand::Draw(m_ScreenBuffer, m_SizeX, m_SizeY);
 		m_BufferMutex.unlock();
 	}
 

@@ -1,6 +1,8 @@
 #pragma once
 
 #include <iostream>
+#include <memory>
+#include <string>
 
 #ifdef _WIN32
 	#define ROBOT_PLATFORM_WINDOWS
@@ -8,7 +10,15 @@
 	#include <Windows.h>
 	#include <conio.h>
 #elif defined(__linux__)
-	#error "Linux wird leider nicht unterstützt :("
+	#define ROBOT_PLATFORM_LINUX
 #elif defined(__APPLE__) || defined(__MACH__)
-	#error "Apple wird leider nicht unterstützt :("
+	#define ROBOT_PLATFORM_MACOS
 #endif
+
+
+namespace Robot {
+
+	template<typename T>
+	using Ref = std::shared_ptr<T>;
+	
+}

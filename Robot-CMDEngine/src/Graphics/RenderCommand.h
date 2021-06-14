@@ -20,7 +20,7 @@ namespace Robot {
 		 * @param sizeY The size of the buffer (To define possible sub regions)
 		 * @param stream The stream to drawn on
 		 */
-		static std::ostream& Draw(std::shared_ptr<Buffer> buffer, int sizeX, int sizeY, std::ostream& stream);
+		static void Draw(std::shared_ptr<Buffer> buffer, int sizeX, int sizeY);
 	};
 
 }

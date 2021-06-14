@@ -1,12 +1,9 @@
-#include "RobotAPI.h"
-
-// Uncomment to run the example code
-
+#include <RobotAPI.h>
 
 int main()
 {
 	//Create an renderer object - Xsize, Ysize, FPS, output stream
-	Robot::Renderer renderer(60, 29, 10, std::cout);
+	Robot::Renderer renderer(60, 29, 30, std::cout);
 
 	//Sets the character to init the buffer
 	renderer.ChangeFillerCharacter('T');
